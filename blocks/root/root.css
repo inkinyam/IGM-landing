@@ -1,0 +1,13 @@
+.page {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: 'Circe', 'Lora Italic', Arial, sans-serif;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}

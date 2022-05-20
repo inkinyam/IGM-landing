@@ -1,0 +1,13 @@
+.contact-us {
+  background-color: #201E33;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 304px;
+}
+
+
+

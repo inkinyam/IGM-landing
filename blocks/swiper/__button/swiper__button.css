@@ -1,0 +1,10 @@
+.swiper__button {
+  padding: 0;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  background-position: center;
+  align-self: center;
+  border: none;
+}

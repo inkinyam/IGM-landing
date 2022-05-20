@@ -1,0 +1,52 @@
+/*импорт вендоров*/
+@import url(../vendors/normalize.css);
+@import url(../vendors/font.css);
+
+/*основная страница*/
+@import url(../blocks/root/root.css);
+
+/*блок HEADER*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__navigation/header__navigaton.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__login/header__login.css);
+
+/*блок LEAD*/
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__header/lead__header.css);
+
+/*блок SWIPER*/
+@import url(../blocks/swiper/swiper.css);
+@import url(../blocks/swiper/__wrapper/swiper__wrapper.css);
+@import url(../blocks/swiper/__slide/swiper__slide.css);
+@import url(../blocks/swiper/__pagination/swiper__pagination.css);
+@import url(../blocks/swiper/__description/swiper__description.css);
+@import url(../blocks/swiper/__caption-box/swiper__caption-box.css);
+@import url(../blocks/swiper/__button/swiper__button.css);
+@import url(../blocks/swiper/__button/_type/swiper__button_type_next.css);
+@import url(../blocks/swiper/__button/_type/swiper__button_type_prev.css);
+@import url(../blocks/swiper/__button-box/swiper__button-box.css);
+
+
+/*блок CONTACT-US*/
+@import url(../blocks/contact-us/contact-us.css);
+@import url(../blocks/contact-us/__title/contact-us__title.css);
+@import url(../blocks/contact-us/__text/contact-us__text.css);
+@import url(../blocks/contact-us/__subtitle/contact-us__subtitle.css);
+@import url(../blocks/contact-us/__button/contact-us__button.css);
+@import url(../blocks/contact-us/__button-caption/contact-us__button-caption.css);
+@import url(../blocks/contact-us/__button-block/contact-us__button-block.css);
+
+/*блок FORM*/
+@import url(../blocks/form-section/form-section.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__title/form__title.css);
+@import url(../blocks/form/__submit/form__submit.css);
+@import url(../blocks/form/__link/form__link.css);
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__check/form__check.css);
+@import url(../blocks/form/__check-description/form__check-description.css);
+@import url(../blocks/form/__check-box/form__check-box.css);
+@import url(../blocks/form/__button-caption/form__button-caption.css);
+@import url(../blocks/form/__button-box/form__button-box.css);

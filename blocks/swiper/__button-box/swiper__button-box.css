@@ -1,0 +1,7 @@
+.swiper__button-box {
+  margin: 0 auto 80px;
+  width: 866px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

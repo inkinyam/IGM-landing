@@ -1,0 +1,7 @@
+.form__button-box{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

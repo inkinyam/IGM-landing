@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание в Институт Генплана Москвы</title>
+</head>
+<link rel="stylesheet" href="./pages/index.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<body class="page">
+<!-- блок HEADER -->
+  <header class="header">
+    <img class="header__logo" src="./image/logo.png" alt="">
+    <nav class="header__navigaton">
+      <a href="" class="header__link">Институт</a>
+      <a href="" class="header__link">Проекты</a>
+      <a href="" class="header__link">Услуги</a>
+      <a href="" class="header__link">Магазин</a>
+      <a href="" class="header__link">Мой город</a>
+      <a href="" class="header__link">Журнал</a>
+      <a href="" class="header__link">Контакты</a>
+    </nav>
+    <button class="header__login"></button>
+    </header>
+
+ <!-- блок MAIN -->
+  <main>
+     <!-- блок LEAD -->
+    <section class="lead">
+      <h1 class="lead__header">Тестовое задание</h1>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./image/image-1.png" alt="картинка №1"></div>
+          <div class="swiper-slide"><img src="./image/image-2.png" alt="картинка №2"></div>
+          <div class="swiper-slide"><img src="./image/image-3.png" alt="картинка №3"></div>
+          <div class="swiper-slide"><img src="./image/image-4.png" alt="картинка №4"></div>
+          <div class="swiper-slide"><img src="./image/image-5.png" alt="картинка №5"></div>
+          <div class="swiper-slide"><img src="./image/image-6.png" alt="картинка №6"></div>
+        </div>
+      </div>
+      <div class="swiper__caption-box">
+        <p class="swiper__description">Развитие городских пространств</p>
+        <div class="swiper__pagination"><span>1</span>/<span>6</span></div>
+      </div>    
+      <div class="swiper__button-box">
+        <button class="swiper__button swiper__button_type_prev"></button>
+        <button class="swiper__button swiper__button_type_next"></button>
+      </div>
+    </section>
+
+   <!-- блок CONTACT-US -->
+  <section class="contact-us">
+    <div class="contact-us__text">
+      <h2 class="contact-us__title">оставьте заявку</h2>
+      <p class="contact-us__subtitle">и мы свяжемся с вами</p>
+    </div>
+    <div class="contact-us__button-block">
+      <p class="contact-us__button-caption">Написать нам</p>
+      <button class="contact-us__button"></button>
+    </div>
+  </section>
+
+    <!-- блок FORM -->
+  <section class="form-section">
+    <form class="form">
+      <h2 class="form__title">контактные данные отправителя обращения</h2>
+      <input class="form__input" type="text" value="" placeholder="Фамилия Имя Отчество*">
+      <input class="form__input" type="phone" value="" placeholder="Телефон*">
+      <input class="form__input" type="email" value="" placeholder="E-mail*">
+      <div class="form__check-box">
+        <input class="form__check" type="checkbox" id="form__agree">
+        <label class="form__check-description" for="form__agree">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных в соответствии с <a class="form__link">Политикой ГАУ «Институт Генплана Москвы»</a> и принимаете <a class="form__link">Пользовательское соглашение</a>.</label>
+      </div>
+      <div class="form__button-box">
+        <p class="form__button-caption">Отправить заявку</p>
+        <button class="form__submit" type="submit"></button>
+      </div>
+    </form>
+  </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
