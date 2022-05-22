@@ -1,9 +1,21 @@
 .form__submit{
   border: none;
-  background-image: url(../../../image/form-submit\ button.png);
   background-color: transparent;
   width: 66px;
   height: 66px;
   padding: 0;
   margin: 0;
+  fill: #F6F6F7; 
+  stroke: #A7A6B5;
+}
+
+.form__submit:hover{
+  fill: #7E7D90; 
+  stroke: #F0F0F4;
+  cursor: url(../../../image/Cursor\ –\ Hand.svg), pointer;
+}
+
+.form__submit:active {
+  fill: #5A596E; 
+  stroke: #fff;
 }

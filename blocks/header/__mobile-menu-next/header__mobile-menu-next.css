@@ -1,0 +1,16 @@
+.header__mobile-menu-next {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 0 12px ;
+  stroke: #F6F6F7;
+  fill: none;
+}
+
+.header__mobile-menu-next:hover {
+  stroke: #5A6FDD;
+}
+
+.header__mobile-menu-next:active {
+  stroke: #5265CB;
+}

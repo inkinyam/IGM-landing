@@ -1,0 +1,7 @@
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0;
+}

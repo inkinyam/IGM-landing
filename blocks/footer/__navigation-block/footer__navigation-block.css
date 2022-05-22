@@ -1,0 +1,11 @@
+.footer__navigation-block {
+  width: max-content;
+}
+
+.footer__navigation-block_place_university {
+  grid-area: univercity;
+}
+
+.footer__navigation-block_place_urist {
+  grid-area: urist;
+}

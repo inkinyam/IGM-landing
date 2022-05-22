@@ -1,0 +1,11 @@
+.header_ver_desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .header_ver_desktop {
+    display: none;
+  }
+}

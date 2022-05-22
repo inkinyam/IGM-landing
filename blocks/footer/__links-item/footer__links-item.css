@@ -1,0 +1,23 @@
+.footer__links-item {
+  display: flex;
+  flex-direction: row;
+  width: 404px;
+  height: 72px;
+  text-decoration: none;
+  color: white;
+  margin-right: 24px;
+}
+
+.footer__links-item:hover {
+  color: #5A6FDD;
+  cursor: url(../../../image/Cursor\ –\ Hand.svg), pointer;
+}
+
+.footer__links-item:active {
+  color: #5265CB;
+}
+
+.footer__links-item:last-of-type {
+  width: 455px;
+  margin-right: 0;
+}

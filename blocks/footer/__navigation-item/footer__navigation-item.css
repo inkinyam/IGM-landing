@@ -1,0 +1,7 @@
+.footer__navigation-item {
+  padding-bottom: 4px;
+}
+
+.footer__navigation-item:last-of-type {
+  padding-bottom: 0;
+}

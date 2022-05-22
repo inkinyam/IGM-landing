@@ -1,19 +1,20 @@
 .header__login {
   padding: 0;
   margin: 0 0 0 37px;
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  background-image: url(../../../image/profile.svg);
-  background-position: center;
   align-self: center;
-  border: none;
-  opacity: 1;
-  transition: background-image 0.05s ease-in;
+  fill: #201E33; 
+  stroke: #201E33;
+  
 }
 
 .header__login:hover {
   cursor: pointer;
-  background-image: url(../../../image/profile_selected.svg);
+  fill: #5A6FDD;
+  stroke: #5A6FDD;
+  cursor: url(../../../image/Cursor\ –\ Hand.svg), pointer;
+}
 
+.header__login:active {
+  fill: #5265CB;
+  stroke: #5265CB;
 }

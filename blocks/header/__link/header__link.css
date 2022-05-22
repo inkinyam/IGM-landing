@@ -7,10 +7,13 @@
   font-weight: bold;
   padding: 0;
   margin: 0;
-  transition: color 0.2s ease-in;
 }
 
 .header__link:hover {
-  cursor: pointer;
+  cursor: url(../../../image/Cursor\ –\ Hand.svg), pointer;
   color: #5A6FDD;
+}
+
+.header__link:active {
+  color: #5265CB;
 }
