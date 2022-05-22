@@ -1,8 +1,6 @@
 .footer__links-item {
   display: flex;
   flex-direction: row;
-  width: 404px;
-  height: 72px;
   text-decoration: none;
   color: white;
   margin-right: 24px;
@@ -18,6 +16,19 @@
 }
 
 .footer__links-item:last-of-type {
-  width: 455px;
   margin-right: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .footer__links-item  {
+    margin-bottom: 32px;
+    width: 460px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .footer__links-item:first-of-type  {
+    margin-bottom: 32px;
+  }
 }

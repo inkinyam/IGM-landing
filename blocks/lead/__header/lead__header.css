@@ -7,3 +7,15 @@
   border-bottom: 1px solid #9FA4BF;
   text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 960px) {
+  .lead__header {
+    width: 80%;
+    font-size: 34px;
+    line-height: 48px;
+    border-bottom: none;
+    margin: 48px auto 32px;
+    padding: 0;
+  }
+}

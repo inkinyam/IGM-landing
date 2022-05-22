@@ -5,3 +5,12 @@
   flex-direction: column;
   width: 644px;
 }
+
+@media screen and (max-width: 960px) {
+  .form  {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
+    margin: 64px 0;
+  }
+}

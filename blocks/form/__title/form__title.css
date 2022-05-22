@@ -6,3 +6,10 @@
   text-transform: uppercase;
   margin: 0 0 56px 0 ;
 }
+
+@media screen and (max-width: 960px) {
+  .form__title  {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

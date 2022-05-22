@@ -5,3 +5,10 @@
   flex-direction: row;
   justify-content: center;
 }
+
+@media screen and (max-width: 960px) {
+  .swiper__button-box {
+    width: 90%;
+    margin: 24px auto 48px;
+  }
+}

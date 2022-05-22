@@ -2,3 +2,15 @@
   height: 66px;
   margin-right: 18px;
 }
+
+@media screen and (max-width: 960px) {
+  .footer__links-logo  {
+    width: 47px;
+    height: 47px;
+    margin-right: 16px;
+  }
+
+  .footer__links-logo:first-of-type  {
+    height: 58px;
+  }
+}

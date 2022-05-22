@@ -1,4 +1,9 @@
 .header__mobile-menu {
+  visibility: hidden;
   background-color: #201E33;
-  display: none;
+  height: 0;
 }
+
+
+
+

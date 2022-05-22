@@ -3,3 +3,9 @@
   height: 460px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 960px) {
+  .swiper {
+    width: 90%;
+  }
+}

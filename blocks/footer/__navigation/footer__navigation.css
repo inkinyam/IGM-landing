@@ -8,3 +8,26 @@
     'univercity urist project contact  social'
     'univercity urist press   services special'
 }
+
+@media screen and (max-width: 1300px) {
+  .footer__navigation  {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .footer__navigation  {
+    grid-template-areas: 
+    'univercity urist project'
+    'univercity urist press'
+    'contact  social services'
+    'special - -'
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .footer__navigation  {
+    display: none;
+  }
+}

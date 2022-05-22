@@ -57,6 +57,7 @@
 
 /*блок FORM*/
 @import url(../blocks/form-section/form-section.css);
+@import url(../blocks/form-section/_open/form-section_open.css);
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__submit/form__submit.css);
@@ -80,3 +81,5 @@
 @import url(../blocks/footer/__navigation-list/footer__navigation-list.css);
 @import url(../blocks/footer/__navigation-title/footer__navigation-title.css);
 @import url(../blocks/footer/__navigation/footer__navigation.css);
+
+@import url(../blocks/footer/__mobile-navigation/footer__mobile-navigation.css);

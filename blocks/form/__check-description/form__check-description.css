@@ -8,3 +8,10 @@
   font-family: 'Lora Italic', Arial, sans-serif;
   width: 90%;
 }
+
+@media screen and (max-width: 960px) {
+  .form__check-description  {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
