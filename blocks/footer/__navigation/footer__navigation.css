@@ -1,9 +1,10 @@
 .footer__navigation {
-  padding: 80px 64px 80px 64px;
+  padding: 80px 112px 80px 64px;
   border-top: 1px solid #5265CB;
   border-bottom: 1px solid #5265CB;
   display: grid;
-  gap: 32px;
+  grid-row-gap: 54px;
+  grid-column-gap: 26px;
   grid-template-areas: 
     'univercity urist project contact  social'
     'univercity urist press   services special'

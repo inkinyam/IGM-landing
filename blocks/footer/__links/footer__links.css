@@ -3,13 +3,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 64px 0;
+  padding: 69px 0;
 }
 
 @media screen and (max-width: 960px) {
   .footer__links {
     flex-direction: column;
-    padding: 64px 24px;
+    padding: 58px 24px;
     box-sizing: border-box;
   }
 }

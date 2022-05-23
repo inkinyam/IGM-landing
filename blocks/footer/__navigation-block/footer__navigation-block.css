@@ -43,3 +43,9 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .footer__navigation-block {
+    margin-bottom: 25px;
+  }
+}

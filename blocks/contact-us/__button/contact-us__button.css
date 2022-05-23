@@ -1,6 +1,6 @@
 .contact-us__button {
   padding: 0;
-  margin: 0;
+  margin: 36px 5px 0 0;
   background-color: transparent;
   width: 66px;
   height: 66px;
@@ -18,4 +18,10 @@
 .contact-us__button:active {
   stroke: #fff;
   fill: #B97F24;
+}
+
+@media screen and (max-width: 960px) {
+  .contact-us__button {
+    margin: 18px 5px 0 0;
+  }
 }

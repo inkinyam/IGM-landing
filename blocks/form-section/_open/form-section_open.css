@@ -1,4 +1,10 @@
 .form-section_open {
   visibility: visible;
-  height: 683px;
+  height: 769px;
+}
+
+@media screen and (max-width: 960px) {
+  .form-section_open {
+    height: 716px
+  }
 }
