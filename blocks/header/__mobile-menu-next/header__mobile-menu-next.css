@@ -2,9 +2,14 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  margin: 0 0 12px ;
+  margin: 0 0 8px ;
   stroke: #F6F6F7;
   fill: none;
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: inline-block;
 }
 
 .header__mobile-menu-next:hover {

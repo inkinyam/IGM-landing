@@ -8,7 +8,7 @@ export default class Form {
   }
 
 //метод, который меняет значение чекбокса при нажатии
-  toggleCheckboxValue () {
+  _toggleCheckboxValue () {
     this._checkbox = this.form.querySelector('.form__check');
     if (this._checkbox.value === '0') 
       { this._checkbox.value ='1' }
@@ -36,7 +36,7 @@ export default class Form {
    setEventListeners () {
 
     //чекбокс
-    this._checkbox.addEventListener('click', this.toggleCheckboxValue);
+    this._checkbox.addEventListener('click', this._toggleCheckboxValue);
 
     //кнопка сабмита
     this.form.addEventListener('submit', (evt)=> {
@@ -103,6 +103,12 @@ export default class Form {
     })
   }
 
+  _clearInputsStation(){
+    this._formInputs.forEach(input=>{
+      input.classList.remove('form__input_type_check');
+    })
+  }
+
  //метод,к оторый отображает результат проверки
   _showValidityQueryResult(res) {
     this._clearSpans();
@@ -124,6 +130,10 @@ export default class Form {
     this._resulMessage.textContent = res['message'];
     this._resulMessage.classList.add('form__message_show');
     this.form.reset();
+    this._toggleCheckboxValue();
+    this._clearInputsStation();
+
+
   }
 
   _hideResultMessage() {

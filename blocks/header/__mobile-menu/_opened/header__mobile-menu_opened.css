@@ -1,5 +1,4 @@
 .header__mobile-menu_opened {
   visibility: visible;
-  height: 668px;
-  transition: all 0.5s ease-out;
+  height: auto;
 }

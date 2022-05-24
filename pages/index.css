@@ -23,10 +23,13 @@
 @import url(../blocks/header/__mobile-menu/header__mobile-menu.css);
 @import url(../blocks/header/__mobile-menu/_opened/header__mobile-menu_opened.css);
 @import url(../blocks/header/__mobile-list-block/header__mobile-list-block.css);
+@import url(../blocks/header/__mobile-list-block/_open/header__mobile-list-block_open.css);
 @import url(../blocks/header/__mobile-menu-item/header__mobile-menu-item.css);
 @import url(../blocks/header/__mobile-menu-next/header__mobile-menu-next.css);
+@import url(../blocks/header/__mobile-menu-next/_hide/header__mobile-menu-next_hide.css);
 @import url(../blocks/header/__mobile-social-block/header__mobile-social-block.css);
 @import url(../blocks/header/__mobile-social-item/header__mobile-social-item.css);
+
 
 
 /*блок LEAD*/

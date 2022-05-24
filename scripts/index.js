@@ -15,21 +15,27 @@ const swiper = new Swiper('.mySwiper', {
 });
 
 //переменные для открытия мобильного меню
-const openMenuButton   = document.querySelector('.header__mobile-button');
-const headerMobileMenu = document.querySelector('.header__mobile-menu');
-const headerLogo       = document.querySelector('.header__mobile-logo'); 
-const header           = document.querySelector('.header_ver_mobile');
+const openMobilMenuButton   = document.querySelector('.header__mobile-button');
+const mobilHeaderMenu  = document.querySelector('.header__mobile-menu');
+const mobilHeaderLogo  = document.querySelector('.header__mobile-logo'); 
+const mobilHeader       = document.querySelector('.header_ver_mobile');
+const showMoreButton   = document.querySelector('.header__mobile-menu-next');
+
 
 // функция открывающая/закрывающая меню в мобильной версии
 const toggleStationMenu = () => {
-  headerLogo.classList.toggle('header__mobile-logo_opened');
-  openMenuButton.classList.toggle('header__mobile-button_opened');
-  header.classList.toggle('header_ver_mobile-open');
-  headerMobileMenu.classList.toggle('header__mobile-menu_opened');
+  mobilHeaderLogo.classList.toggle('header__mobile-logo_opened');
+  openMobilMenuButton.classList.toggle('header__mobile-button_opened');
+  mobilHeader.classList.toggle('header_ver_mobile-open');
+  mobilHeaderMenu.classList.toggle('header__mobile-menu_opened');
+  //если меню открыто и мы его закрываем, скрыть доп.разделы
+  if (mobilHeaderMenu.classList.contains('header__mobile-menu_opened')) {
+    hideMoreMobileSection();
+  }
 }
 
 // слушатель на открытие мобильного меню по нажатию кнопки
-openMenuButton.addEventListener('click', toggleStationMenu);
+openMobilMenuButton.addEventListener('click', toggleStationMenu);
 
 
 //переменные для открытия формы обратной связи
@@ -43,6 +49,7 @@ const openContactUsForm = () => {
 
 openFormButton.addEventListener('click', openContactUsForm);
 
+// создаем форму и навешиваем на нее слушатели
 const initForm = (formId) => {
   return new Form (formId);
 }
@@ -50,3 +57,15 @@ const initForm = (formId) => {
 const contactForm = initForm('contactForm');
 contactForm.setEventListeners();
 
+//функция, открывающая доп.разделы в мобильном меню
+const showMoreMobileSections = () => {
+  showMoreButton.classList.add('header__mobile-menu-next_hide');
+  document.querySelector('.header__mobile-list-block').classList.add('header__mobile-list-block_open');
+}
+
+const hideMoreMobileSection = () => {
+  showMoreButton.classList.remove('header__mobile-menu-next_hide');
+  document.querySelector('.header__mobile-list-block').classList.remove('header__mobile-list-block_open');
+}
+
+  showMoreButton.addEventListener('click', showMoreMobileSections);
