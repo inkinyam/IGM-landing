@@ -49,23 +49,26 @@ const openContactUsForm = () => {
 
 openFormButton.addEventListener('click', openContactUsForm);
 
-// создаем форму и навешиваем на нее слушатели
+// создаем форму 
 const initForm = (formId) => {
   return new Form (formId);
 }
 
-const contactForm = initForm('contactForm');
-contactForm.setEventListeners();
+
+
+const mobileMenuSection = document.querySelector('.header__mobile-list-block');
 
 //функция, открывающая доп.разделы в мобильном меню
 const showMoreMobileSections = () => {
   showMoreButton.classList.add('header__mobile-menu-next_hide');
-  document.querySelector('.header__mobile-list-block').classList.add('header__mobile-list-block_open');
+  mobileMenuSection.classList.add('header__mobile-list-block_open');
 }
 
 const hideMoreMobileSection = () => {
   showMoreButton.classList.remove('header__mobile-menu-next_hide');
-  document.querySelector('.header__mobile-list-block').classList.remove('header__mobile-list-block_open');
+  mobileMenuSection.classList.remove('header__mobile-list-block_open');
 }
 
   showMoreButton.addEventListener('click', showMoreMobileSections);
+
+  initForm('contactForm');
