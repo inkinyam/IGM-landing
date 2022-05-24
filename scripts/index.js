@@ -1,3 +1,5 @@
+import Form from "./form.js";
+
 //подключаем swiper для отображения картинок в слайдере
 const swiper = new Swiper('.mySwiper', {
   loop: true,
@@ -8,7 +10,8 @@ const swiper = new Swiper('.mySwiper', {
   navigation: {
     nextEl: ".swiper__button_type_next",
     prevEl: ".swiper__button_type_prev",
-  }
+  },
+  centeredSlides:true
 });
 
 //переменные для открытия мобильного меню
@@ -39,4 +42,11 @@ const openContactUsForm = () => {
 }
 
 openFormButton.addEventListener('click', openContactUsForm);
+
+const initForm = (formId) => {
+  return new Form (formId);
+}
+
+const contactForm = initForm('contactForm');
+contactForm.setEventListeners();
 

@@ -87,12 +87,12 @@
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./image/image-1.png" alt="картинка №1"></div>
-          <div class="swiper-slide"><img src="./image/image-2.png" alt="картинка №2"></div>
-          <div class="swiper-slide"><img src="./image/image-3.png" alt="картинка №3"></div>
-          <div class="swiper-slide"><img src="./image/image-4.png" alt="картинка №4"></div>
-          <div class="swiper-slide"><img src="./image/image-5.png" alt="картинка №5"></div>
-          <div class="swiper-slide"><img src="./image/image-6.png" alt="картинка №6"></div>
+          <div class="swiper-slide"><img class="swiper__img" src="./image/image-1.png" alt="картинка №1"></div>
+          <div class="swiper-slide"><img class="swiper__img"  src="./image/image-2.png" alt="картинка №2"></div>
+          <div class="swiper-slide"><img class="swiper__img"  src="./image/image-3.png" alt="картинка №3"></div>
+          <div class="swiper-slide"><img class="swiper__img"  src="./image/image-4.png" alt="картинка №4"></div>
+          <div class="swiper-slide"><img class="swiper__img"  src="./image/image-5.png" alt="картинка №5"></div>
+          <div class="swiper-slide"><img class="swiper__img"  src="./image/image-6.png" alt="картинка №6"></div>
         </div>
       </div>
       <div class="swiper__caption-box">
@@ -137,15 +137,23 @@
 
     <!-- блок FORM -->
   <section class="form-section ">
-    <form class="form">
+    <form class="form" id="contactForm" 
+                       data-validate-url="https://genplanmos.ru/integration/form/validate/" 
+                       method="POST" 
+                       action="https://genplanmos.ru/integration/form/send/"
+                       novalidate>
       <h2 class="form__title">контактные данные отправителя обращения</h2>
-      <input class="form__input" type="text" value="" placeholder="Фамилия Имя Отчество*">
-      <input class="form__input" type="email" value="" placeholder="E-mail*">
-      <input class="form__input" type="phone" value="" placeholder="Телефон*">
+      <input class="form__input item" id="name" type="text" value="" placeholder="Фамилия Имя Отчество*" maxlength="50" required>
+          <span class="form__err-name form__err form__err_show"></span>
+      <input class="form__input item" id="email" type="email" value="" placeholder="E-mail*" maxlength="30" required>
+          <span class="form__err-email form__err"></span>
+      <input class="form__input item" id="phone" type="phone" value="" placeholder="Телефон*" maxlength="30" required>
+          <span class="form__err-phone form__err"></span>
       <div class="form__check-box">
-        <input class="form__check" type="checkbox" id="form__agree">
-        <label class="form__check-description" for="form__agree">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных в соответствии с <a class="form__link">Политикой ГАУ «Институт Генплана Москвы»</a> и принимаете <a class="form__link">Пользовательское соглашение</a>.</label>
+        <input class="form__check item" type="checkbox" value="0" id="consent" required>
+        <label class="form__check-description" for="consent">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных в соответствии с <a class="form__link">Политикой ГАУ «Институт Генплана Москвы»</a> и принимаете <a class="form__link">Пользовательское соглашение</a>.</label>
       </div>
+      <span class="form__err-consent form__err"></span>
       <div class="form__button-box">
         <p class="form__button-caption">Отправить заявку</p>
         <button class="form__submit" type="submit">
@@ -156,6 +164,7 @@
           </svg>     
         </button>
       </div>
+      <p class="form__message "></p>
     </form>
   </section>
   </main>
@@ -457,6 +466,6 @@
       </a>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 </html>

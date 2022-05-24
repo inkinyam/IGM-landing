@@ -63,11 +63,17 @@
 @import url(../blocks/form/__submit/form__submit.css);
 @import url(../blocks/form/__link/form__link.css);
 @import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input/_type/form__input_type_err.css);
+@import url(../blocks/form/__input/_type/form__input_type_check.css);
 @import url(../blocks/form/__check/form__check.css);
 @import url(../blocks/form/__check-description/form__check-description.css);
 @import url(../blocks/form/__check-box/form__check-box.css);
 @import url(../blocks/form/__button-caption/form__button-caption.css);
 @import url(../blocks/form/__button-box/form__button-box.css);
+@import url(../blocks/form/__err/form__err.css);
+@import url(../blocks/form/__err/_show/form__err_show.css);
+@import url(../blocks/form/__message/form__message.css);
+@import url(../blocks/form/__message/_show/form__message_show.css);
 
 /*блок FOOTER*/
 @import url(../blocks/footer/footer.css);

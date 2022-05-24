@@ -10,7 +10,7 @@
   .form  {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 24px;
-    margin: 64px 0;
+    padding: 64px 24px;
+    margin:  0;
   }
 }

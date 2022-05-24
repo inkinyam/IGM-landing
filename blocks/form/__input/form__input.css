@@ -6,9 +6,9 @@
   font-size: 20px;
   font-weight: normal;
   line-height: 24px;
-  color: #7C83B1;
+  color: #201E33;
   padding: 6px;
-  margin-bottom: 56px;
+ 
   width: 100%;
 }
 
@@ -17,9 +17,7 @@
   color: #7C83B1;
 }
 
-.form__input:last-of-type {
-  margin-bottom: 39px;
-}
+
 
 .form__input:focus{
   outline: none;
@@ -29,6 +27,5 @@
   .form__input  {
     width: 90%;
     font-size: 18px;
-    margin-bottom: 51px;
   }
 }

@@ -7,9 +7,9 @@
   align-items: center;
 }
 
-.swiper__slide img {
+ .swiper__img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
